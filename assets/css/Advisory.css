@@ -1,0 +1,41 @@
+table, th, td {
+	text-align: center;
+	border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: center-left;
+}
+th {
+    color: #777;
+}
+table#table {
+    width: 100%;
+}
+th, td{
+    border-bottom: 1px solid lightgrey;
+}
+@media only screen and (max-width: 750px) {
+
+	html {
+   		min-width: 320px;
+	}
+	body{
+		min-width: 320px
+	}
+
+	.content{
+		width: 100%;
+		margin:none;
+	}
+
+	table#t01 {
+    	width: 320px;
+	}
+	table, th, td {
+	text-align: center;
+	border-collapse: collapse;
+	width: inherit;
+	height: auto;
+	}
+}
