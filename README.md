@@ -1,7 +1,7 @@
 # DTILabs
 
 ### Leht nähtav aadressil:
-### https://rolandrp.github.io/DTILabs/index.html
+### https://centre-for-educational-technology.github.io/DTILabs/
 
 
 ![Pilt DTI Laborite uuest lehest](/assets/img/out-8.gif)
@@ -22,6 +22,7 @@ Projekti teostamiseks kasutame Jekyll staatiliste lehtede generaatorit (jekyll 3
 - Stivo Sirel
 - Kristjan Veensalu
 - Roland R. Puiestik
+- Joosep Martin
 
 ## Lehe seadistamine oma Github Pages'i alla.
 
@@ -32,7 +33,7 @@ Projekti teostamiseks kasutame Jekyll staatiliste lehtede generaatorit (jekyll 3
   5. Tunne uhkust ja too arendajatele pitsat, projekt on nähtav aadressil https://SINUKASUTAJANIMI.github.io/DTILabs
 
 
-### Projekt teostatud TLU Informaatika õppekava Tarkvaraarenduse Praktika aine raames.
+### Projekti esialgne versioon teostatud TLU Informaatika õppekava Tarkvaraarenduse Praktika aine raames.
 
 ### Kõik õigused kuuluvad TLÜ Digitehnoloogiate Instituudile.
 Copyright (c) 2017 Tallinna Ülikool, Digitehnoloogiate Instituut.
