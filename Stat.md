@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: defaultmd
 title: Statute
 ---
-**Digitehnoloogiate instituudi laborite statuut**
+## Digitehnoloogiate instituudi laborite statuut
 
 1. Üldsätted
 

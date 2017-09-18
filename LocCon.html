@@ -1,56 +1,39 @@
 ---
+layout: default
+title: LocationContacts
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    {% include base.html %}
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{base}}/assets/css/main.css">
-    <link rel="stylesheet" href="{{base}}/assets/css/loccon.css">
-	  <link rel="stylesheet" href="{{base}}/assets/css/nav.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Labs</title>
-  </head>
-  <body>
-    {% include nav.html %}
-
-    <div class="content">
-		<h3>Locations & Contacts</h3>
-		<div class = "table">
-			<table id="t01" align="center">
-			  <tr>
-				<th>Name</th>
+<div class="content">
+    <h1>Locations & Contacts</h1>
+    <div class = "table">
+		<table id="t01" align="center">
+            <tr>
+                <th>Name</th>
 				<th>Lab</th> 
 				<th>Number</th>
 				<th>Room</th>
 				<th>E-mail</th>
-			  </tr>
-			 {% for contact in site.contacts %}
-			  <tr>
+            </tr>
+            {% for contact in site.contacts %}
+            <tr>
 				<td>{{ contact.name }}</td>
 				<td>{{ contact.lab }}</td>
 				<td>{{ contact.number }}</td>
 				<td>{{ contact.room }}</td>
 				<td>{{ contact.email }}</td>
-			  </tr>
-			  {% endfor %}
-			</table>
-		</div>
-			<div class="Maps">
-				<div class="pic1">
-					<div class="map">
-						<img src="assets/img/map1.jpg" id = "map1">
-					</div>
-				</div>
-				<div class="pic2">
-					<div class="map">
-						<img src="assets/img/map2.jpg" id = "map2">
-					</div> 
-				</div>
-			</div>
-	   </div>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="Maps">
+        <div class="pic1">
+            <div class="map">
+                <img src="assets/img/map1.jpg" id = "map1">
+            </div>
+        </div>
+        <div class="pic2">
+            <div class="map">
+                <img src="assets/img/map2.jpg" id = "map2">
+            </div> 
+        </div>
+    </div>
+</div>

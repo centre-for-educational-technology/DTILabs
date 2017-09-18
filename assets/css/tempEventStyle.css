@@ -1,66 +1,43 @@
 ---
 ---
 
-.mainNav {
-  overflow: hidden;
-  background: white;
-  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-          box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-  /*border-bottom: 1px solid lightgrey;*/
-}
 
-.mainNav a, .mainNav label {
-  display: block;
-  padding: 20px;
-  color: rgba(0,0,0,0.7);
-  text-decoration: none;
-  line-height: 20px;
-
-}
-
-.mainNav a:hover, .mainNav label:hover {
-  color: Black;
-}
-
-.mainNav label {
-  float: right;
-  padding: 18px 20px;
-  cursor: pointer;
-}
-
-.mainNav label:after {
-  content: "\2261";
-  font-size: 1.8em;
-}
-
-.logo {
+.eventsNav .logo {
   float: left;
+    margin-left:7%;
+    margin-top:2px;
   font-weight: bold;
   font-size: 1.5em;
 }
 
-.mainMenu {
+.eventsMenu {
   float: right;
+    margin-right:5%;
+    margin-top:12px;
   max-height: 0;
   width: 100%;
   -webkit-transition: max-height 0.3s;
           transition: max-height 0.3s;
 }
 
-.mainMenu ul {
+.eventsMenu ul {
   margin: 0 0 0 0;
-  padding: 0;
-   padding-bottom: 10px;
+  padding: 20px;
+   padding-bottom: 5px;
 }
 
-.mainMenu li {
+.eventsMenu li {
   display: block;
   text-align: center;
 }
 
-.mainMenu a {
+.eventsMenu a {
   padding: 10px;
   width: 100%;
+}
+
+.eventsMenu a:visited {
+  background: grey;
 }
 
 .Drop ul {
@@ -82,28 +59,28 @@
 
   .mainNav label { display: none; }
 
-  .mainMenu {
+  .eventsMenu {
     width: auto;
     max-height: none;
   }
 
-  .mainMenu ul {
+  .eventsMenu ul {
     padding: 0 20px;
     /padding-right: 10px;
   }
 
-  .mainMenu li {
+  .eventsMenu li {
     display: inline-block;
     text-align: left;
   }
 
-  .mainNav .mainMenu a {
+  .eventsMenu .eventsMenu a {
     display: inline-block;
     padding: 20px 10px;
     width: auto;
   }
 
-  .mainNav .mainMenu a:hover {
+  .eventsMenu .eventsMenu a:hover {
     padding: 9px 10px 19px 10px;
     margin: 10px 0 0 0;
     border-top: 1px solid lightgrey;
@@ -151,6 +128,5 @@
 
 @media only screen and (min-width: 700px) {
 }
-
 
 

@@ -1,5 +1,4 @@
 ---
-
 title: labs
 labName: Gamefication
 styleRef: Games

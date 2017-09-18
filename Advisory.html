@@ -1,43 +1,24 @@
 ---
+layout: default
+title: Advisory
 ---
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    {% include base.html %}
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{base}}/assets/css/main.css">
-    <link rel="stylesheet" href="{{base}}/assets/css/Advisory.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Labs</title>
-  </head>
-  <body>
-      
-    {% include nav.html %}
-
-    <div class="content">
-      <h3>Advisory Board</h3>
-        <p>Page description and other info regarding the advisory board</p>
-        <div class = "table">
-			<table id="table" align="center">
-			  <tr>
-				<th>Name</th>
+<div class="content">
+    <h1>Advisory Board</h1>
+    <p>Page description and other info regarding the advisory board</p>
+    <div class = "table">
+        <table id="table" align="center">
+            <tr>
+                <th>Name</th>
 				<th>Specialty</th> 
 				<th>Company</th>
-			  </tr>
-			 {% for advisory in site.advisory %}
-			  <tr>
+            </tr>
+            {% for advisory in site.advisory %}
+            <tr>
 				<td>{{ advisory.name }}</td>
 				<td>{{ advisory.specialty }}</td>
 				<td>{{ advisory.company }}</td>
-			  </tr>
-			  {% endfor %}
-			</table>
-		</div>
-      </div>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>

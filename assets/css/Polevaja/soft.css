@@ -5,7 +5,6 @@
 {% include base.html %}
 
 
-
 :root {
   --lab-colour: rgba(255, 153, 0, 1);
 }

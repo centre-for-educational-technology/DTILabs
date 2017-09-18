@@ -1,0 +1,82 @@
+---
+---
+
+{% include base.html %}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("{{base}}/assets/css/nav.css");
+@import url("{{base}}/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css");
+
+body, html {
+  margin: auto;
+  /*font: 400 15px/1.8 "Lato", sans-serif;*/
+  font: 400 15px/1.8 'Roboto', sans-serif;
+  color: #777;
+  height: 100%;
+  max-width: 1400px;
+}
+
+.header-container {
+  overflow: hidden;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+h3 {
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+.content {
+  min-height: 80%;
+  margin: 50px;
+}
+
+footer {
+  background: white;
+  text-align: center;
+  padding: 10px 5px;
+  margin: 5% 0;
+  -webkit-box-shadow: 0px -1px 1px rgba(0,0,0,0.2);
+          box-shadow: 0px -1px 1px rgba(0,0,0,0.2)
+}
+
+footer ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0%;
+  border-right: 1px solid grey;
+  padding: 0 4%;
+}
+
+footer ul li:last-of-type {
+  border-right: none;
+}
+
+@media only screen and (max-width: 765px) {
+  footer ul li {
+    border-right: none;
+  }
+
+  footer ul li:first-of-type {
+    border-right: 1px solid grey;
+  }
+
+  .content {
+    margin: 10px;
+  }
+
+}

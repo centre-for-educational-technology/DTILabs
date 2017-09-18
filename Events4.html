@@ -3,17 +3,11 @@ layout: tempEventLayout
 title: Events
 ---
 {% include events.html %}
-
-{% assign leht = "site.data.events.labHack" %}
-
-{% if page.id == "Event#labhack"%}
-{% assign leht = "site.data.events.labHack" %}
-{% endif %}
 <br>
-<ul id="#lab">
+<ul>
     {% assign curr_date = site.time %}
     
-    {% assign sorted = leht %}
+    {% assign sorted = site.data.events.misc | sort: 'date'%}
    
         
     {% for events in sorted %}

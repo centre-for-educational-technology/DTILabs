@@ -1,27 +1,10 @@
 ---
+layout: default
+title: index
 ---
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    {% include base.html %}
-    <link rel="stylesheet" href="{{base}}/assets/css/mainp.css"> 
-	<script src="{{base}}/assets/js/headerGalAnim.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    {% include nav.html %}
-    {% include headerGal.html %}
-
-    <div class='content'>
-		<div class="mainpText">
-			<h3>Main Page - Here we describe what and why we are!</h3>
-			
-		</div>
+{% include headerGal.html %}
+<div class='content'>
+    <div class="mainpText">
+        <h1>Main Page - Here we describe what and why we are!</h1>
 	</div>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+</div>

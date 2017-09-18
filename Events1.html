@@ -1,0 +1,233 @@
+---
+layout: tempEventLayout
+title: Events
+---
+<script>
+function myFunction(show, hide1, hide2, hide3) {
+    var show = document.getElementsByClassName('lh');
+    var hide1 = document.getElementsByClassName('dd');
+    var hide2 = document.getElementsByClassName('ev');
+    var hide3 = document.getElementsByClassName('ms');
+    
+    show.style.display = 'block';
+    hide1.style.display = 'none';
+    hide2.style.display = 'none';
+    hide3.style.display = 'none';
+}
+</script>
+<header class="eventsNav">
+    <a class="logo" href="Events1">Events</a>
+    <nav class="eventsMenu">
+    <ul>
+      <li><a href="" onclick="myFunction()">LabHack</a></li>
+      <li><a href="" onclick="myFunction()">Demoday</a></li>
+      <li><a href="" onclick="myFunction()">E-Vent</a></li>
+      <li><a href="" onclick="myFunction()">Misc</a></li>
+    </ul>
+  </nav>
+    </header>
+<br>
+<ul>
+    {% assign curr_date = site.time %}
+    
+    {% assign sorted = site.data.events.labHack | sort: 'date'%}
+   
+        
+    {% for events in sorted %}
+        {% if curr_date < events.expires %}
+            <a href="#events{{ forloop.index }}" class="lh">
+                <div class="event {{ events.title }}">
+                    <h1>{{ events.title }}</h1>
+                    <div class="align">
+                        <ul>
+                            <li>{{ events.url }}</li>
+                            <li>Not Expired</li>
+                            <li>{{ events.date }}</li>
+                        </ul>
+                    </div>
+                    <div class="align right">
+                        <ul>
+                            <li>{{ events.location }}</li>
+                            <li>{{ events.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+    {% for events in sorted %}
+        {% if curr_date > events.expires %}
+            <a href="#events{{ forloop.index }}" class="lh">
+                <div class="event over {{ events.title }}">
+                    <h1>{{ events.title }}</h1>
+                    <div class="align">
+                        <ul>
+                            <li>{{ events.url }}</li>
+                            <li>Expired</li>
+                            <li>{{ events.date }}</li>
+                        </ul>
+                    </div>
+                    <div class="align right">
+                        <ul>
+                            <li>{{ events.location }}</li>
+                            <li>{{ events.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+</ul>
+<ul>
+    {% assign curr_date = site.time %}
+    
+    {% assign sorted = site.data.events.demoday | sort: 'date'%}
+   
+        
+    {% for events in sorted %}
+        {% if curr_date < events.expires %}
+            <a href="#events{{ forloop.index }}" class="dd">
+                <div class="event {{ events.title }}">
+                    <h1>{{ events.title }}</h1>
+                    <div class="align">
+                        <ul>
+                            <li>{{ events.url }}</li>
+                            <li>Not Expired</li>
+                            <li>{{ events.date }}</li>
+                        </ul>
+                    </div>
+                    <div class="align right">
+                        <ul>
+                            <li>{{ events.location }}</li>
+                            <li>{{ events.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+    {% for events in sorted %}
+        {% if curr_date > events.expires %}
+            <a href="#events{{ forloop.index }}" class="dd">
+                <div class="event over {{ events.title }}">
+                    <h1>{{ events.title }}</h1>
+                    <div class="align">
+                        <ul>
+                            <li>{{ events.url }}</li>
+                            <li>Expired</li>
+                            <li>{{ events.date }}</li>
+                        </ul>
+                    </div>
+                    <div class="align right">
+                        <ul>
+                            <li>{{ events.location }}</li>
+                            <li>{{ events.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+</ul>
+<ul>
+    {% assign curr_date = site.time %}
+    
+    {% assign sorted = site.data.events.e-vent | sort: 'date'%}
+   
+        
+    {% for events in sorted %}
+        {% if curr_date < events.expires %}
+            <a href="#events{{ forloop.index }} class="ev"">
+                <div class="event {{ events.title }}">
+                    <h1>{{ events.title }}</h1>
+                    <div class="align">
+                        <ul>
+                            <li>{{ events.url }}</li>
+                            <li>Not Expired</li>
+                            <li>{{ events.date }}</li>
+                        </ul>
+                    </div>
+                    <div class="align right">
+                        <ul>
+                            <li>{{ events.location }}</li>
+                            <li>{{ events.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+    {% for events in sorted %}
+        {% if curr_date > events.expires %}
+            <a href="#events{{ forloop.index }}" class="ev">
+                <div class="event over {{ events.title }}">
+                    <h1>{{ events.title }}</h1>
+                    <div class="align">
+                        <ul>
+                            <li>{{ events.url }}</li>
+                            <li>Expired</li>
+                            <li>{{ events.date }}</li>
+                        </ul>
+                    </div>
+                    <div class="align right">
+                        <ul>
+                            <li>{{ events.location }}</li>
+                            <li>{{ events.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+</ul>
+<ul>
+    {% assign curr_date = site.time %}
+    
+    {% assign sorted = site.data.events.misc | sort: 'date'%}
+   
+        
+    {% for events in sorted %}
+        {% if curr_date < events.expires %}
+            <a href="#events{{ forloop.index }}" class="ms">
+                <div class="event {{ events.title }}">
+                    <h1>{{ events.title }}</h1>
+                    <div class="align">
+                        <ul>
+                            <li>{{ events.url }}</li>
+                            <li>Not Expired</li>
+                            <li>{{ events.date }}</li>
+                        </ul>
+                    </div>
+                    <div class="align right">
+                        <ul>
+                            <li>{{ events.location }}</li>
+                            <li>{{ events.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+    {% for events in sorted %}
+        {% if curr_date > events.expires %}
+            <a href="#events{{ forloop.index }}" class="ms">
+                <div class="event over {{ events.title }}">
+                    <h1>{{ events.title }}</h1>
+                    <div class="align">
+                        <ul>
+                            <li>{{ events.url }}</li>
+                            <li>Expired</li>
+                            <li>{{ events.date }}</li>
+                        </ul>
+                    </div>
+                    <div class="align right">
+                        <ul>
+                            <li>{{ events.location }}</li>
+                            <li>{{ events.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,25 +1,8 @@
 ---
+layout: default
+title: Labs
 ---
-
-<!DOCTYPE html>
-<html>
-  <head>
-	  {% include base.html %}
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{base}}/assets/css/main.css">
-	<link rel="stylesheet" href="{{base}}/assets/css/nav.css">
-    <link rel="stylesheet" href="{{base}}/assets/css/labs.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Labs</title>
-  </head>
-  <body>
-    {% include nav.html %}
-
-  
-
-
-	<div class="content">
+	<div class="LabsContent">
 		<div class="homepageNav">
 			<!--Gamification lab-->
 			{% for lab in site.labs %}
@@ -33,7 +16,7 @@
 									<div class="labsTextSecond">
 									<h2><i class="{{lab.iconType}}" aria-hidden="true"></i>{{lab.labName}}</h2>
 
-									<p>{{lab.content}}</p>
+									<p class="labContent">{{lab.content}}</p>
 									</div>
 								</div>
 							</div>
@@ -47,7 +30,7 @@
 							<div class="labsTextFirst">
 							<h2><i class="{{lab.iconType}}" aria-hidden="true"></i>{{lab.labName}}</h2>
 
-							<p>{{lab.content}}</p>
+							<p class="labContent">{{lab.content}}</p>
 
 							</div>
 						</div>
@@ -68,7 +51,7 @@
 							<div class="labsTextSecond">
 							<h2><i class="{{lab.iconType}}" aria-hidden="true"></i>{{lab.labName}}</h2>
 
-							<p>{{lab.content}}</p>
+							<p class="labContent">{{lab.content}}</p>
 							</div>
 						</div>
 					</div>
@@ -82,7 +65,7 @@
 							<div class="labsTextFirst">
 							<h2><i class="{{lab.iconType}}" aria-hidden="true"></i>{{lab.labName}}</h2>
 
-							<p>{{lab.content}}</p>
+							<p class="labContent">{{lab.content}}</p>
 
 							</div>
 						</div>
@@ -95,8 +78,5 @@
     		{% endif %}
 			{% endfor %}
 			<br><br>
-
-    {% include footer.html %}
-
-  </body>
-</html>
+        </div>
+      </div>

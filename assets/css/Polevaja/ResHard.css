@@ -20,19 +20,19 @@
   background: rgba(0,0,0,0.05);
 }*/
 
-.game {
+.resourceGame {
   border-left: 3px solid rgba(143, 0, 179, 1);
 }
 
-.tech {
+.resourceTech {
   border-left: 3px solid rgba(0, 153, 255, 1);
 }
 
-.soft {
+.resourceSoft {
   border-left: 3px solid rgba(255, 153, 0, 1);
 }
 
-.ixd {
+.resourceIxd {
   border-left: 3px solid rgba(8, 153, 0, 1);
 }
 

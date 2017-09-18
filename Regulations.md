@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: defaultmd
 title: Regulations
 ---
 ## Tallinna Ülikooli Digitehnoloogiate instituudi laborite kasutamise tingimused

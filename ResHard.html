@@ -1,48 +1,28 @@
 ---
+layout: default
+title: Software
 ---
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    {% include base.html %}
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{base}}/assets/css/main.css">
-    <link rel="stylesheet" href="{{base}}/assets/css/ResHard.css">
-	  <link rel="stylesheet" href="{{base}}/assets/css/nav.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Software</title>
-  </head>
-  <body>
-    {% include nav.html %}
-
-
-    <div class="content">
-    <h3>Hardware</h3>
-    <ul class="resource">
-      <h4 class="naming">Naming</h4><h4 class="os"></h4><h4 class="countH">Count</h4>
-      <i class="fa fa-lightbulb-o icon" aria-hidden="true"></i>
-      {% for idlabhardware in site.data.idlabHardware %}
-      <li class="ixd"><a href=""><span class="name">{{ idlabhardware.naming }}</span><span class="os"></span><span class="count">{{ idlabhardware.count }}</span></a></li>
-      {% endfor %}
-      <i class="fa fa-gamepad icon" aria-hidden="true"></i>
-      <i class="fa fa-cogs icon" aria-hidden="true"></i>
-      <i class="fa fa-code icon" aria-hidden="true"></i>
-    </ul>
-    <h3>Software</h3>
-    <ul class="resource">
-      <h4 class="naming">Naming</h4><h4 class="os">OS</h4><h4 class="countH">Count</h4>
-      <i class="fa fa-lightbulb-o icon" aria-hidden="true"></i>
-      {% for idlabsoftware in site.data.idlabSoftware %}
-      <li class="ixd"><a href=""><span class="name">{{ idlabsoftware.naming }}</span><span class="os"></span><span class="count">{{ idlabsoftware.count }}</span></a></li>
-      {% endfor %}
-      <i class="fa fa-gamepad icon" aria-hidden="true"></i>
-      <i class="fa fa-cogs icon" aria-hidden="true"></i>
-      <i class="fa fa-code icon" aria-hidden="true"></i>
-    </ul>
-
-    </div>
-    {% include footer.html %}
-
-  </body>
-</html>
+<div class="content">
+    <h1>Hardware</h1>
+        <ul class="resource">
+        <h4 class="naming">Naming</h4><h4 class="os"></h4><h4 class="countH">Count</h4>
+        <i class="fa fa-lightbulb-o icon" aria-hidden="true"></i>
+        {% for idlabhardware in site.data.idlabHardware %}
+            <li class="resourceIxd"><a href=""><span class="name">{{ idlabhardware.naming }}</span><span class="os"></span><span class="count">{{ idlabhardware.count }}</span></a></li>
+        {% endfor %}
+        <i class="fa fa-gamepad icon" aria-hidden="true"></i>
+        <i class="fa fa-cogs icon" aria-hidden="true"></i>
+        <i class="fa fa-code icon" aria-hidden="true"></i>
+        </ul>
+    <h1>Software</h1>
+        <ul class="resource">
+        <h4 class="naming">Naming</h4><h4 class="os">OS</h4><h4 class="countH">Count</h4>
+        <i class="fa fa-lightbulb-o icon" aria-hidden="true"></i>
+        {% for idlabsoftware in site.data.idlabSoftware %}
+            <li class="resourceIxd"><a href=""><span class="name">{{ idlabsoftware.naming }}</span><span class="os"></span><span class="count">{{ idlabsoftware.count }}</span></a></li>
+        {% endfor %}
+        <i class="fa fa-gamepad icon" aria-hidden="true"></i>
+        <i class="fa fa-cogs icon" aria-hidden="true"></i>
+        <i class="fa fa-code icon" aria-hidden="true"></i>
+        </ul>
+</div>

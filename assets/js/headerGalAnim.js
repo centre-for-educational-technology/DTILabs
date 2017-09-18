@@ -11,7 +11,7 @@ var div6 = document.getElementById("div6");
 var div7 = document.getElementById("div7");
 var div8 = document.getElementById("div8");
 var firstTime = true;
-var navDots = document.getElementsByClassName("nav-dot");
+var navDots = document.getElementsByClassName("navDot");
 var i;
 var counter = 0;
 var loadNext = true;
