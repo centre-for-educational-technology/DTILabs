@@ -92,7 +92,7 @@
     /padding-right: 10px;
   }
 
-  .mainMenu li {
+  .mainMenu #navButton {
     display: inline-block;
     text-align: left;
   }
@@ -104,8 +104,6 @@
   }
 
   .mainNav .mainMenu a:hover {
-    padding: 9px 10px 19px 10px;
-    margin: 10px 0 0 0;
     border-top: 1px solid lightgrey;
   }
 
@@ -125,7 +123,7 @@
   .Drop {
     width: auto;
     padding: 0;
-    margin: 0px 0 0 -100%;
+    margin: 0px 0 0 -30%;
   }
 
   .EventsDropCont {
@@ -144,7 +142,6 @@
   .eventsDrop .Drop {
     width: auto;
     padding: 0;
-    margin: 0px 0 0 -180%;
   }
 
 }
